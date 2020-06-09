@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: actions/checkout@v1
       - name: Run a multi-line script
-        run: 
+        run: |
           ls -l
           echo Hello
-          sudo apt install cowsay -y
+          sudo apt install cowsay
           cowsay Hello
